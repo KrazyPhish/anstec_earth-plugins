@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KrazyPhish/anstec_earth-react.git"
+    "url": "git+https://github.com/KrazyPhish/anstec_earth-plugins.git"
   },
   "license": "MIT",
   "peerDependencies": {

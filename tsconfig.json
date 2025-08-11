@@ -3,7 +3,6 @@
   "compilerOptions": {
     "target": "ES2015",
     "module": "ESNext",
-    "jsx": "react-jsx",
     "declaration": false,
     "downlevelIteration": true,
     "strict": true,
@@ -24,8 +23,9 @@
   },
   "exclude": [
     "createRelease.ts",
+    "createVuepress.ts",
     "rollup.config.ts",
     "node_modules"
   ],
-  "include": ["src/**/*.ts", "src/**/*.tsx"]
+  "include": ["src/**/*.ts"]
 }

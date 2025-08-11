@@ -8,7 +8,7 @@ import { defineConfig } from "rollup"
 
 export default defineConfig({
   input: "src/index.ts",
-  external: ["@anstec/earth"],
+  external: ["@anstec/earth", "echarts"],
   treeshake: true,
   output: [
     {
