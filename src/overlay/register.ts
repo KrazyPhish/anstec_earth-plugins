@@ -7,6 +7,7 @@ import {
   graphic,
   matrix,
   registerAction,
+  registerCoordinateSystem,
   type CustomSeriesRenderItemAPI,
 } from "echarts"
 
