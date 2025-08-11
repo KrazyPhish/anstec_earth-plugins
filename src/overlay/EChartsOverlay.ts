@@ -27,7 +27,7 @@ export interface EChartsOverlay {
  * @example
  * ```
  * const earth = createEarth()
- * const overlay = EchartsOverlay(earth, { id: "echarts-map" })
+ * const overlay = new EchartsOverlay(earth, { id: "echarts-map" })
  * overlay.update(echartsOption)
  * ```
  */
@@ -50,14 +50,12 @@ export class EChartsOverlay implements Destroyable {
 
   #createChartOverlay() {
     this.#scene.canvas.setAttribute("tabIndex", "0")
-    const offset = this.#scene.canvas.getBoundingClientRect()
     const echartDom = document.createElement("div")
     echartDom.style.position = "absolute"
-    echartDom.style.top = `${offset.top}px`
-    echartDom.style.left = `${offset.left}px`
+    echartDom.style.top = "0px"
+    echartDom.style.left = "0px"
     echartDom.style.width = `${this.#scene.canvas.width}px`
     echartDom.style.height = `${this.#scene.canvas.height}px`
-    echartDom.style.pointerEvents = "none"
     echartDom.style.pointerEvents = "none"
     echartDom.setAttribute("id", this._id)
     echartDom.setAttribute("class", "echarts-overlay")
