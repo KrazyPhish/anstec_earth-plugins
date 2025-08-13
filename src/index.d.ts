@@ -19,8 +19,12 @@ declare module "@anstec/earth-plugins" {
    * @example
    * ```
    * const earth = createEarth()
-   * const overlay = new EchartsOverlay(earth, { id: "echarts-map" })
-   * overlay.updateOverlay(echartsOption)
+   * const option: EChartsOption = {
+   *  // your echarts option
+   * } 
+   * const overlay = new EchartsOverlay(earth, { option })
+   * //when update option
+   * overlay.update(option)
    * ```
    */
   export class EChartsOverlay {
